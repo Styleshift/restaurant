@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/*** Erase Me Later ****/
+
+nav, header, section, footer, .headerLeft , .headerRight, .aboutUsLeft, .AboutUsRight {
+    border: 2px solid black;
+}
+
+/*** Layout ****/
+
+
+header {
+    height: 100dvh;
+}
+
+nav {
+    height: 20%;
+    width: 100%;
+}
+
+.headerLeft, .headerRight {
+    height: 80%;
+    width: 50%;
+}
+
+.aboutUsLeft {
+    width: 40%;
+    height: 100%;
+}
+
+.aboutUsRight {
+    width: 60%;
+    height: 100%;
+}
+
+
+section, footer {
+    height: 100dvh;
+}
+
+/*** Flexbox ****/
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutUs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*** Content ***/
+
+header {
+    background-image: url("../img/headerEditedFlipped.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutUsLeft {
+    background-image: url("../img/teapotPie.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutUsRight {
+    background-image: url("../img/oatmealEdited2.jpg");
+    background-size: 50%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
