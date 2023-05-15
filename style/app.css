@@ -6,7 +6,7 @@
 
 /*** Erase Me Later ****/
 
-nav, header, section, footer, .headerLeft , .headerRight, .aboutUsLeft, .AboutUsRight {
+nav, header, section, footer, .headerLeft , .headerRight, .aboutUsLeft, .AboutUsRight, ul, .openingHours, .openingHours2, .box1, .box2, .welcome, .search, .socialIcons {
     border: 2px solid black;
 }
 
@@ -29,17 +29,19 @@ nav {
 
 .aboutUsLeft {
     width: 40%;
-    height: 100%;
 }
 
 .aboutUsRight {
     width: 60%;
-    height: 100%;
 }
 
 
 section, footer {
     height: 100dvh;
+}
+
+.openingHours2 {
+    width: 50%;
 }
 
 /*** Flexbox ****/
@@ -61,6 +63,12 @@ header {
     flex-wrap: wrap;
 }
 
+.aboutUsRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -69,6 +77,38 @@ nav {
 ul {
     display: flex;
     justify-content: space-evenly;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.openingHours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.openingHours1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 25%;
+}
+
+.box1, .box2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box3 {
+    display: flex;
+    justify-content: center;
 }
 
 /*** Content ***/
@@ -92,10 +132,26 @@ header {
     background-repeat: no-repeat;
 }
 
-ul {
-    width: 40%;
-    list-style-type: none;
-    margin-top: 40px;
+.footerImg {
+    height: 25%;
+    border-radius: 50%;
+}
+
+.bowlOfFruit {
+    width: 70%;
+    min-width: 350px;
+}
+
+.openingHours2 {
+    width: 75%;
+    height: 60%;
+}
+
+
+/** Typography ***/
+
+html {
+    font-size: 18px;
 }
 
 a {
@@ -109,6 +165,116 @@ a:hover {
     cursor: pointer;
 }
 
-h1 {
-    font-size: 4vw;
+ul {
+    list-style-type: none;
+    height: 50%;
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+}
+
+.footerSpan {
+    color: #ffbd84;
+}
+
+.footerP {
+    width: 50%;
+    line-height: 40px;
+}
+
+.footerSpan, .footerImg, .footerSpan2, .footerSpan3, .footerSpan4, .footerP, .footerH4 {
+    padding: .8em;
+}
+
+.footerSpan2 {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.footerH4 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.welcome {
+    font-size: 4rem;
+}
+
+.searchButton {
+    color: white;
+    background-color: #ff9135;
+}
+
+.search {
+    width: 80%;
+    height: 10%;
+    text-align: center;
+    display: inline;
+}
+.searchBar {
+    width: 80%;
+    height: 40px;
+}
+
+.searchButton {
+    width: 20%;
+    height: 40px;
+}
+
+.socialIcons {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon1 {
+    flex-grow: 2;
+}
+
+.icon2, .icon3 {
+    flex-grow: 2;
+}
+/** Media Queries **/
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .7rem;
+    }
+
+    .welcome, .icon1, .icon2, .icon3 {
+        font-size: 2rem;
+        color: white;
+        text-shadow: 4px 4px black;
+    }
+
+    header {
+        background-image: url(../img/headerEditedFlipped.jpg);
+        background-position: right;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    .footerP {
+        font-size: .6em;
+        line-height: 20px;
+        width: 90%;
+        text-align: center;
+    }
+    .headerRight, .aboutUsLeft , .aboutUsRight {
+        display: none;
+    }
+    .headerLeft {
+        width: 100%;
+    }
+    header {
+        background-color: red;
+    }
 }
