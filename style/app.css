@@ -6,10 +6,10 @@
 
 /*** Erase Me Later ****/
 
-nav, header, section, footer, .headerLeft , .headerRight, .aboutUsLeft, .AboutUsRight, ul, .openingHours, .openingHours2, .box1, .box2, .welcome, .search, .socialIcons, .order, .topOrder, .bottomOrder, .orderContainer {
+/* nav, header, section, footer, .headerLeft , .headerRight, .aboutUsLeft, .AboutUsRight, ul, .openingHours, .openingHours2, .box1, .box2, .welcome, .search, .socialIcons, .order, .topOrder, .bottomOrder, .orderContainer {
     border: 2px solid black;
 }
-
+ */
 /*** Layout ****/
 
 
@@ -186,7 +186,7 @@ header {
 
 .orderPics {
     height: 50%;
-    width: 20%;
+    width: 21%;
     margin: calc(10/8);
     padding: 1.2em;
 }
