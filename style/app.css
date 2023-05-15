@@ -6,9 +6,9 @@
 
 /*** Erase Me Later ****/
 
-/* nav, header, section, footer, .headerLeft , .headerRight, .aboutUsLeft, .AboutUsRight, ul, .openingHours, .openingHours2, .box1, .box2, .welcome, .search, .socialIcons {
+nav, header, section, footer, .headerLeft , .headerRight, .aboutUsLeft, .AboutUsRight, ul, .openingHours, .openingHours2, .box1, .box2, .welcome, .search, .socialIcons, .order, .topOrder, .bottomOrder, .orderContainer {
     border: 2px solid black;
-} */
+}
 
 /*** Layout ****/
 
@@ -111,6 +111,35 @@ footer {
     justify-content: center;
 }
 
+.order {
+    display: flex;
+    flex-direction: column;
+}
+
+.topOrder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.orderContainer {
+    width: 60%;
+    height: 100%;
+    padding: 5%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bottomOrder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*** Content ***/
 
 header {
@@ -147,6 +176,20 @@ header {
     height: 60%;
 }
 
+.topOrder {
+    height: 25%;
+} 
+
+.bottomOrder {
+    height: 75%;
+}
+
+.orderPics {
+    height: 50%;
+    width: 20%;
+    margin: calc(10/8);
+    padding: 1.2em;
+}
 
 /** Typography ***/
 
@@ -241,6 +284,7 @@ footer {
 
 .about {
     color: #ff9b43;
+    font-weight: bold;
 }
 
 .discover {
@@ -256,6 +300,31 @@ footer {
     width: 200px;
     height: 50px;
     background-color: #ff9135;
+}
+
+.orderOnline {
+    color:#ff9135;
+    font-weight: bold;
+}
+
+.cuisine {
+    font-size: 3rem;
+}
+
+.cuisineUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.cusineLi {
+    width: 20%;
+}
+
+.cuisineLi:hover {
+    border-bottom: 2px solid #ff9135;
+    color: #ff9135;
 }
 /** Media Queries **/
 
